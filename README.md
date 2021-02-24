@@ -21,8 +21,6 @@ templateUrl - the html file
 styleUrls: an array of css files
 providers: - typically adds the service used by that component
 
-
-
 ## directives
 
 provide program logic
@@ -44,3 +42,10 @@ connect application data and DOM
 good design would be to have components delegate logical code to services 
 i.e. logging, validation, fetching from server
 
+
+## first api
+
+the httpClient out of the box lib allows angular to call rest apis
+returns observables
+(rxjs)
+subscribe acts as promise.then
