@@ -17,5 +17,12 @@
 <div class="root">
   <span>{{ title }}</span>
   <br>
-  <button (click)="secondEvent()">click me</button>
+  Enter a name: <input type="text" [(ngModel)]="name"> 
+  <br>
+  <button (click)="secondEvent()">guess age</button>
+  <br>
+  <span>result: </span>
+  <div>
+    {{ currentResult }}
+  </div>
 </div>

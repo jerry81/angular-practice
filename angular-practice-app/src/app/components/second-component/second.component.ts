@@ -9,15 +9,17 @@ import { Ageify } from './ageify.service';
 })
 export class SecondComponent {
   title = 'a second component enters the fray'; // this is a class member
-
+  name = '';
+  currentResult = ''
   constructor(
     private logger: Logger,
     private ageifyService: Ageify  
   ) {} // missing private keyword made DI fail
 
   secondEvent() {
-    this.ageifyService.getAgeForName('testName').subscribe(resp => {
-      this.logger.log(resp)
+    this.ageifyService.getAgeForName(this.name || 'mike').subscribe(resp => {
+      this.logger.log(resp);
+      this.currentResult = JSON.stringify(resp);
     })
   }
 }
