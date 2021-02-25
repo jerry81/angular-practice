@@ -49,3 +49,16 @@ the httpClient out of the box lib allows angular to call rest apis
 returns observables
 (rxjs)
 subscribe acts as promise.then
+
+## integrate angular material
+
+1.  use cli: ng add @angular/material
+2.  adds roboto font, updates package.json, add icon font, adds some global css style overrides
+3.  after adding aa slider, i noticed a theme that all modules have to be added to the root app module for them to be used in templates.
+
+## definitions
+
+material design - design system created by google 
+
+angular material - official component library built by angular and typescript imple,ents material design
+20k+ github stars
