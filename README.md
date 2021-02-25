@@ -56,6 +56,10 @@ subscribe acts as promise.then
 2.  adds roboto font, updates package.json, add icon font, adds some global css style overrides
 3.  after adding a slider, i noticed a theme that all modules have to be added to the root app module for them to be used in templates. (may have to add to declarations)
 
+## angular-tour-of-heroes
+
+for purposes of looking at a best practices official tutorial, we start by using cli to bootstrap another angular project
+
 ## definitions
 
 material design - design system created by google 
