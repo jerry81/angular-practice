@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HEROES } from './mock/mock-heroes';
 import { Hero } from './interfaces/hero';
 
 @Component({
@@ -7,13 +8,17 @@ import { Hero } from './interfaces/hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Captain America'
-  }
+
+  heroes = HEROES
+  selectedHero: Hero
+
   constructor() { }
 
   ngOnInit(): void { // this is a lifecycle hook, like created in vue
+  }
+
+  onSelect(hero: Hero) {
+    this.selectedHero = hero
   }
 
 }

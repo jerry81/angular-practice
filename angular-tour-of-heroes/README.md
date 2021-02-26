@@ -39,3 +39,9 @@ Template parse errors:
 Can't bind to 'ngModel' since it isn't a known property of 'input'.
     reason: ngModel not available by default.  must opt-in to using FormsModule
     solution: add FormsModule to appModule imports
+3.  add a *ngFor directive
+    a.  out of the box
+4.  add click event with (click)=<handlerName(args)
+5.  add aa *ngIf directive
+6.  add class binding [class.selected]=<boolean>
+    

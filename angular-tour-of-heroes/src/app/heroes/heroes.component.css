@@ -1,0 +1,12 @@
+.heroes {
+    background-color: black;
+    color: #0f0;
+    padding: 10px;
+}
+.heroes li {
+    padding: 5px;
+}
+
+.heroes li.selected {
+    background-color: grey;
+}
