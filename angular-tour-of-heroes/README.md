@@ -44,4 +44,7 @@ Can't bind to 'ngModel' since it isn't a known property of 'input'.
 4.  add click event with (click)=<handlerName(args)
 5.  add aa *ngIf directive
 6.  add class binding [class.selected]=<boolean>
-    
+7.  add interaction between multiple components
+    a.  Input decorator (from angular/core)
+    b.  similar to Vue props, in Ng known as property binding: one way
+    c.  note that another declaration for the component was added to app.module
