@@ -48,3 +48,13 @@ Can't bind to 'ngModel' since it isn't a known property of 'input'.
     a.  Input decorator (from angular/core)
     b.  similar to Vue props, in Ng known as property binding: one way
     c.  note that another declaration for the component was added to app.module
+8.  add service - b/c components shouldn't directly fetch or save data 
+    a.  di instead of creating with "new"
+    b.  create with cli: ng generate service xyz
+    c.  register provider - makes available to DI system - default: providedIn: 'root' - single shared instance that can be injected to any class that asks for it, also optimized to not inject if not used
+    d.  services return observabes b/c they are asynchronous by nature
+        i.  RxJS provides this
+9.  add messaging component 
+    a.  thru cli 
+    b.  add service thru cli 
+
