@@ -57,4 +57,7 @@ Can't bind to 'ngModel' since it isn't a known property of 'input'.
 9.  add messaging component 
     a.  thru cli 
     b.  add service thru cli 
-
+10.  add navigation
+    a.  goal - make a dashboard like tab control 
+    b.  add appRoutingModule - using cli - learned flat and module flags - add to /app folder and specify where to register import respectively
+    c.  ls
