@@ -62,3 +62,4 @@ Can't bind to 'ngModel' since it isn't a known property of 'input'.
     b.  add appRoutingModule - using cli - learned flat and module flags - add to /app folder and specify where to register import respectively
     c.  ls
 11.  add another dashboard view to make routing make sense
+12.  add httpClientModule and in memory web api module
