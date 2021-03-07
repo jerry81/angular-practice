@@ -5,22 +5,23 @@ import { Hero } from './heroes/interfaces/hero';
 @Injectable({
   providedIn: 'root'
 })
-export class InMemoryDataService {
+export class InMemoryDataService implements InMemoryDbService{
 
   constructor() { }
 
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 11, name: 'Dr Doom' },
+      { id: 12, name: 'Iron Man' },
+      { id: 13, name: 'Hulk' },
+      { id: 14, name: 'Thor' },
+      { id: 15, name: 'Captain Marvel' },
+      { id: 16, name: 'Nebula' },
+      { id: 17, name: 'Star Lord' },
+      { id: 18, name: 'Dr Strange' },
+      { id: 19, name: 'Rocket Raccoon' },
+      { id: 20, name: 'Scarlet Witch' },
+      { id: 1, name: 'Captain America' },
     ];
     return {heroes};
   }
